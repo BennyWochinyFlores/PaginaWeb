@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>TOPITOP</title>
+    <link rel="stylesheet" href="style.css">
+    <!--css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5b57cc661d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+        <header>
+            <div class="menu container">
+                <a href="index.html" class="logo">TOPITOP</a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img class="menu-icono" src="IMAGENES/menu-btn.png" alt="manu">
+
+                    
+                 </label>
+                 <nav class="navbar">
+                    <ul>
+                        <li><a href="usuario.html">USUARIO</a></li>
+                        <li><a href="producto.html">PRODUCTOS</a></li>
+                        <li><a href="stock.html">STOCK</a></li>
+                        <li><a href="cliente.html">CLIENTE</a></li>
+                        <li><a href="almacen.html">ALMACEN</a></li>
+                        <li><a href="proveedores.html">PROVEEDORES</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="container-fluid row">
+        <form class="col-3 p-3" id="usuario-form" autocomplete="off">
+            <h3 class="text-center text-secondary">Registro de Usuarios</h3>
+            <div class="mb-3">
+                <label for="codigo" class="form-label">Codigo</label>
+                <input type="text" class="form-control" id="codigo" placeholder="Ingrese su codigo">
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+            <div class="mb-3">
+                <label for="dni" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="dni" placeholder="Ingrese su DNI">
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">DIRECCIÓN</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingrese su direccion">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">TELEFONO</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Ingrese su telefono">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Codigo</label>
+                <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo">
+            </div>
+            <button type="submit" class="btn btn-primary add-btn" value="submit">Registrar</button>
+        </form>
+        <div class="col-9 p-4">
+            <table class="table table-success table-striped">
+                <thead >
+                    <tr>
+                        <th>CODIGO</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>DNI</th>
+                        <th>DIRECCIÓN</th>
+                        <th>TELEFONO</th>
+                        <th>CORREO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="usuario-lista">
+                    <tr>
+                        <td>1</td>
+                        <td>Mateo</td>
+                        <td>Mamani canqui</td>
+                        <td>78286456</td>
+                        <td>Av.venezuela 5647</td>
+                        <td>998896751</td>
+                        <td>mateo456@hotmail.com</td>
+                        <td>
+                            <a href="#" class="btn btn-small btn-warning editar">EDITAR</a>
+                            <a href="#" class="btn btn-small btn-danger delete">DELETE</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jorge</td>
+                        <td>Ramires Loyola</td>
+                        <td>79865189</td>
+                        <td>Av.Miguel 8847</td>
+                        <td>945574736</td>
+                        <td>jorge123@hotmail.com</td>
+                        <td>
+                            <a href="#" class="btn btn-small btn-warning editar">EDITAR</a>
+                            <a href="#" class="btn btn-small btn-danger delete">DELETE</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+<script src="script_cliente.js"></script>
+
+</body>
+
+</html>

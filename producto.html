@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topitop| Productos</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5b57cc661d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4">
+    
+    <style>
+        body{
+            background-color: #fafaf9;
+        }
+        table {
+            
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <header>
+        <div class="menu container">
+            <a href="index.html" class="logo">TOPITOP</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="menu-icono" src="IMAGENES/menu-btn.png" alt="manu">
+
+                
+             </label>
+             <nav class="navbar">
+                <ul>
+                <li><a href="usuario.html">USUARIO</a></li>
+                <li><a href="producto.html">PRODUCTOS</a></li>
+                <li><a href="stock.html">STOCK</a></li>
+                <li><a href="cliente.html">CLIENTE</a></li>
+                <li><a href="almacen.html">ALMACEN</a></li>
+                <li><a href="proveedores.html">PROVEEDORES</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+</header>
+
+    <h2>Lista de Productos</h2>
+    <a href="/TpProducto/agregar.html"><button type="button" class="btn btn-primary my-4">Agregar producto</button></a>
+
+    <button type="button" class="btn btn-primary btn-secondary my-4" onclick="moveEditPage()">Editar producto</button>
+    <button type="button" class="btn btn-primary btn-danger my-4" onclick=" deleteProduct()">Eliminar producto</button>
+
+    <div class="col-9 p-2 ">
+    <table id="myTable" class="table table-success table-striped">
+
+        <thead>
+            <tr>
+                <th class="col-1">select</th>
+                <th class="col-2">Codigo producto</th>
+                <th class="col-4">nombre</th>
+                <th class="col-4">descripcion</th>
+                <th class="col-2">precio</th>
+                
+             
+            </tr>
+            
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table></div>
+
+
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="script_producto.js"></script>
+
+</body>
+</html>
